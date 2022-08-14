@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+    <h1>X Company</h1>
+	<h1>Credit Tools</h1>
+    <h1>Predict Right,    Gain Revenue</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="person_age" placeholder="Customer Age" required="required" />
+        <input type="text" name="person_income" placeholder="Customer Annual Income" required="required" />
+		<input type="text" name="person_home_ownership" placeholder="Home Ownership (Rent = 0, Mortgage = 1, and Own = 2)" required="required" />
+        <input type="text" name="person_emp_length" placeholder="Customer Employment Length in years " required="required" />
+        <input type="text" name="loan_grade" placeholder="Loan Grade (G = 0 to A = 6)" required="required" />
+		<input type="text" name="loan_amnt" placeholder="Loan Amount Requested" required="required" />
+        <input type="text" name="loan_int_rate" placeholder="Loan interest rate" required="required" />
+        <input type="text" name="loan_percent_income" placeholder="Percent Income Due to Loan" required="required" />
+		<input type="text" name="cb_person_default_on_file" placeholder="Customer Historical Default (1 = Yes, 0 = No)" required="required" />
+        <input type="text" name="cb_person_cred_hist_length" placeholder="Credit History Length in years" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
