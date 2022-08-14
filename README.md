@@ -9,3 +9,5 @@ The data set for the model training is the credit risk data set from kaggle (htt
 Overall of the machine learning model has the following performance: 
 1. AUC Score of 0,98
 2. Precision score on default customer of 0,97
+
+The deployed model will certainly help credit companies in gaining more revenue by selecting the right customer.
