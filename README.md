@@ -1,6 +1,6 @@
 # Credit-Risk-Prediction-with-Deployment
 
-This is my final project for Big Data using Python programme held by Digital Talent Scholarship (Indonesian Ministry of Communication and Informatics). In this project, I try to model and deploy a credit risk application using supervised binary classification machine learning model. I was pairing with Narendra Seta (https://github.com/NarendraSetaR) for developing the solutions. 
+This is my final project for Big Data using Python (Digital Talent Scholarship programme) held by Indonesian Ministry of Communication and Informatics. In this project, I try to model and deploy a credit risk application using supervised binary classification machine learning model. I was pairing with Narendra Seta (https://github.com/NarendraSetaR) for developing the solutions. 
 
 I was using python data package such as pandas, numpy, and sklearn for the machine learning model. Then, for the ML deployment I was using Pyhton Flask Library, and a bit of HTML and CSS for the web template. The reference of this project could be access through this link: https://www.youtube.com/watch?v=UbCWoMf80PY&t=417s 
 
